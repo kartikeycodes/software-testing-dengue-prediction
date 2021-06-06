@@ -12,7 +12,6 @@ blocks:
           commands:
             - checkout
             - cache restore
-            - pip install nbmake==0.5
             - pip install nbmake pytest-xdist
             - cache store
             - pytest --nbmake -n=auto ./ipynb
