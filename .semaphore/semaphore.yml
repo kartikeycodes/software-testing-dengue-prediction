@@ -11,6 +11,7 @@ blocks:
         - name: Test Notebooks
           commands:
             - checkout
+            - cache restore
             - pip install -r requirements.txt
             - pip install nbmake pytest-xdist
             - cache store
