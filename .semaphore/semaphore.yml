@@ -1,0 +1,18 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Test
+    task:
+      jobs:
+        - name: Test Notebooks
+          commands:
+            - checkout
+            - cache restore
+            - pip install -r requirements.txt
+            - pip install nbmake pytest-xdist
+            - cache store
+            - pytest --nbmake -n=auto ./ipynb
