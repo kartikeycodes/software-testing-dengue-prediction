@@ -12,6 +12,6 @@ blocks:
           commands:
             - checkout
             - cache restore
-            - pip install nbmake pytest-xdist
+            - pip3 install nbmake pytest-xdist
             - cache store
             - pytest --nbmake -n=auto ./ipynb
