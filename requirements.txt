@@ -2,3 +2,8 @@ pandas
 numpy
 sklearn
 seaborn
+pytest
+matplotlib
+os
+
+
