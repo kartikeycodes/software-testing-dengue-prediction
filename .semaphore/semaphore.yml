@@ -20,4 +20,4 @@ blocks:
             - sudo python -m pip install pytest
             - pip3 install nbmake pytest-xdist
             - cache store
-            - pytest --nbmake -n=auto ./ipynb
+            - pytest --nbmake -n=auto "./ipynb"
