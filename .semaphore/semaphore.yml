@@ -14,6 +14,11 @@ blocks:
             - cache restore
             - pip3 install seaborn
             - pip3 install pandas
+            - pip3 install os
+            - pip3 install numpy
+            - pip3 install sklearn
+            - pip3 install matplotlib
+            - pip3 install pytest=2.9.1
             - pip3 install nbmake pytest-xdist
             - cache store
             - pytest --nbmake -n=auto ./ipynb
