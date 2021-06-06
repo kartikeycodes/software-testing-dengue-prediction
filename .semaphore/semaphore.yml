@@ -17,7 +17,8 @@ blocks:
             - pip3 install numpy
             - pip3 install sklearn
             - pip3 install matplotlib
+            - pip3 install nbmake==0.5
             - sudo python -m pip install pytest
             - pip3 install nbmake pytest-xdist
             - cache store
-            - pytest --nbmake ./ipynb
+            - pytest --nbmake -n=auto ./ipynb
