@@ -21,4 +21,4 @@ blocks:
             - sudo python -m pip install pytest
             - pip3 install nbmake pytest-xdist
             - cache store
-            - pytest --collect-only --nbmake /home/semaphore/software-testing-dengue-prediction/ipynb
+            - pytest --collect-only --nbmake ./ipynb
