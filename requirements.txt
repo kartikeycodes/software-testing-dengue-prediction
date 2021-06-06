@@ -2,4 +2,3 @@ pandas
 numpy
 sklearn
 seaborn
-numpy
