@@ -12,7 +12,7 @@ blocks:
           commands:
             - checkout
             - cache restore
+            - pip3 install -r requirements.txt
             - pip3 install nbmake pytest-xdist
-            - sudo apt-get install python-pytest
             - cache store
             - pytest --nbmake -n=auto ./ipynb
