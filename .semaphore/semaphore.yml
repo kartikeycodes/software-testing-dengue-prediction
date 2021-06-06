@@ -13,6 +13,6 @@ blocks:
             - checkout
             - cache restore
             - pip3 install nbmake pytest-xdist
-            - apt install python-pytest
+            - sudo apt install python-pytest
             - cache store
             - pytest --nbmake -n=auto ./ipynb
