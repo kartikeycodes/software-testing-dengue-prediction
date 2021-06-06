@@ -22,4 +22,4 @@ blocks:
             - which pytest
             - pip3 install nbmake pytest-xdist
             - cache store
-            - python -m pytest --collect-only --nbmake ./ipynb
+            - python -m pytest --collect-only --nbmake "./ipynb"
