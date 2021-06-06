@@ -19,7 +19,6 @@ blocks:
             - pip3 install matplotlib
             - pip3 install nbmake==0.5
             - sudo python -m pip install pytest
-            - pytest -v
             - pip3 install nbmake pytest-xdist
             - cache store
             - pytest /home/semaphore/software-testing-dengue-prediction/ipynb
